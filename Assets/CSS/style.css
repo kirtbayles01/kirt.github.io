@@ -1,0 +1,250 @@
+:root {
+  --bg1: #3b393a;
+  --bg2: rgba(163, 163, 163, 0.956);
+  --body: rgb(95, 86, 86);
+  --brand: #e9c980;
+  --white: rgba(255, 252, 252, 0.911);
+  --p: rgb(161, 150, 150);
+}
+* {
+  font-family: "Poppins", serif;
+}
+
+.logo {
+  width: 4%;
+  border-radius: 60%;
+  padding: 3px;
+  margin-left: 20px;
+}
+
+.navbar #navbarNav .nav-link.active {
+  color: cyan;
+}
+
+.navbar #navbarNav .nav-link:hover {
+  color: cyan;
+}
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+#banner {
+  height: 100vh;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUYYuqmReN29Lrl80IzFBp_JsCVwXuIAPd_Q&s);
+  background-size: cover;
+}
+
+/* BUTTON */
+.btn {
+  padding: 15px 30px;
+  transition: all 0.4s ease;
+  font-weight: 800;
+  border-radius: 0;
+}
+
+.btn-brand {
+  background-color: rgb(185, 185, 54);
+}
+
+.btn-brand:hover {
+  background-color: yellow;
+  border-color: var(--brand);
+  color: black;
+}
+
+h1 {
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#Services {
+  background-color: black;
+  background-size: cover;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#About {
+  height: 100vh;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.icon-box-img {
+  width: 40%;
+  margin: 20px;
+  align-self: center;
+}
+
+.btn-outline-brand {
+  background-color: transparent;
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.btn-outline-brand:hover {
+  background-color: transparent;
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.card {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card:hover {
+  background-color: var(--bg2);
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+  color: #ffffff;
+}
+
+#cta {
+  background-color: white;
+  background-size: cover;
+  position: relative;
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* parallax effect */
+  background-attachment: fixed;
+  min-height: 70vh;
+}
+.jojo {
+  width: 65px;
+  border-radius: 100px;
+  height: 65px;
+}
+
+#reviews {
+  background-color: black;
+}
+.testimonials {
+  background-color: gray;
+}
+
+#reviews a {
+  color: var(--brand);
+}
+
+#faq {
+  background-color: grey;
+}
+.faq-section {
+  max-width: 800px;
+  margin: auto;
+}
+.accordion-item {
+  margin-bottom: 20px;
+  border-radius: 0 !important;
+}
+.faq-question {
+  background-color: var(--brand);
+  border: none;
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 0;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0a345e;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.faq-answer {
+  border-left: 3px solid var(--brand);
+  padding: 10px 15px;
+  margin-left: 0;
+  background-color: rgb(211, 221, 211);
+}
+.faq-answer p {
+  margin-bottom: 0;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--body);
+  background-color: var(--brand);
+}
+.faq-question:hover {
+  background-color: rgb(211, 221, 211);
+  color: var(--body);
+}
+.accordion-button::after {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  float: right;
+  font-weight: 900;
+  margin-left: auto;
+}
+
+.accordion-button [aria-expanded="true"]::after {
+  content: "";
+}
+#footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: grey;
+}
+#footer ul.list-unstyled li a {
+  color: #dae2e9;
+  text-decoration: none;
+}
+#footer ul.list-unstyled li:hover a {
+  color: rgb(202, 159, 102);
+}
+#reviews h2,
+#services h2 {
+  color: rgb(59, 39, 14);
+}
+
+.btn-outline-light {
+  border-color: #2d2a2b;
+  color: rgb(241, 206, 109);
+}
+#footer h5 {
+  color: rgb(202, 177, 106);
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .logo {
+    width: 15%;
+  }
+  section {
+    padding: 60px 10px;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+  #about {
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+  }
+  #Services {
+    margin-top: 35% !important;
+    padding-top: 25% !important;
+  }
+
+  #footer {
+    padding: 50px 20px;
+  }
+}
